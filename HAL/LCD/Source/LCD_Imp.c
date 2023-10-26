@@ -75,7 +75,7 @@ void LCD_voidSendInitCommand(u8 command){
 }
 
 void LCD_voidWriteChar(u8 data){
-	DIO_voidSetPinValue(LCD_CONTROL_PORT,LCD_RS, High); //RS = 0
+	DIO_voidSetPinValue(LCD_CONTROL_PORT,LCD_RS, High); //RS = 1
 
 	DIO_voidSetPinValue(LCD_CONTROL_PORT, LCD_EN, High); //EN = 1
 #if LCD_BITS == LCD_8_BIT_MODE
@@ -180,6 +180,19 @@ void LCD_voidGoToPosition(u8 X_Position, u8 Y_Position){
 
 	SET_BIT(Local_Address,7); /*You can also just OR / add with 0x80 (128) to set the the MSB*/
 	LCD_voidSendCommand(Local_Address);
+}
+
+void LCD_voidClearPosition(u8 X_Position, u8 Y_Position){
+	LCD_voidGoToPosition(X_Position, Y_Position);
+	LCD_voidWriteChar(' ');
+}
+
+void LCD_voidClearLine(u8 X_Position){
+	u8 Y_Position = 0;
+	while(Y_Position <20){
+		LCD_voidClearPosition(X_Position,Y_Position);
+		Y_Position++;
+	}
 }
 
 void LCD_voidDisplaySpecialChar(u8 *char_ptr,u8 CGRam_index,u8 row,u8 column){
