@@ -152,7 +152,7 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x5100
+.text           0x00000000     0x510e
  *(.vectors)
  .vectors       0x00000000       0x54 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -360,33 +360,33 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
  .text.KPD_u8GetPressedKey
                 0x0000416e      0x172 ./HAL/Keypad/Source/Keypad_Imp.o
                 0x0000416e                KPD_u8GetPressedKey
- .text.main     0x000042e0      0xb26 ./App/main.o
+ .text.main     0x000042e0      0xb34 ./App/main.o
                 0x000042e0                main
  .text.LoadSpecialChars
-                0x00004e06       0x48 ./App/main.o
-                0x00004e06                LoadSpecialChars
+                0x00004e14       0x48 ./App/main.o
+                0x00004e14                LoadSpecialChars
  .text.AdjustMovements
-                0x00004e4e      0x194 ./App/main.o
-                0x00004e4e                AdjustMovements
- .text.libgcc   0x00004fe2       0x1a d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
-                0x00004fe2                __divmodqi4
- .text.libgcc   0x00004ffc       0x36 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
-                0x00004ffc                __divmodsi4
- .text.libgcc   0x00005032        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00005032        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00005032       0x18 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
-                0x00005032                __udivmodqi4
- .text.libgcc   0x0000504a       0x44 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x0000504a                __udivmodsi4
- .text.libgcc   0x0000508e       0x38 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x0000508e                __prologue_saves__
- .text.libgcc   0x000050c6       0x36 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x000050c6                __epilogue_restores__
-                0x000050fc                . = ALIGN (0x2)
+                0x00004e5c      0x194 ./App/main.o
+                0x00004e5c                AdjustMovements
+ .text.libgcc   0x00004ff0       0x1a d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+                0x00004ff0                __divmodqi4
+ .text.libgcc   0x0000500a       0x36 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x0000500a                __divmodsi4
+ .text.libgcc   0x00005040        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00005040        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00005040       0x18 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x00005040                __udivmodqi4
+ .text.libgcc   0x00005058       0x44 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00005058                __udivmodsi4
+ .text.libgcc   0x0000509c       0x38 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x0000509c                __prologue_saves__
+ .text.libgcc   0x000050d4       0x36 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x000050d4                __epilogue_restores__
+                0x0000510a                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000050fc        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x000050fc                exit
-                0x000050fc                _exit
+ .fini9         0x0000510a        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x0000510a                exit
+                0x0000510a                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -405,11 +405,11 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000050fc        0x4 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000510a        0x4 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00005100                _etext = .
+                0x0000510e                _etext = .
 
-.data           0x00800060       0x8e load address 0x00005100
+.data           0x00800060       0x8e load address 0x0000510e
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -510,8 +510,8 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
  *(.bss*)
  *(COMMON)
                 0x008000ee                PROVIDE (__bss_end, .)
-                0x00005100                __data_load_start = LOADADDR (.data)
-                0x0000518e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000510e                __data_load_start = LOADADDR (.data)
+                0x0000519c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008000ee        0x0
                 0x008000ee                PROVIDE (__noinit_start, .)
@@ -536,7 +536,7 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x3f00
+.stab           0x00000000     0x3f18
  *(.stab)
  .stab          0x00000000      0x6cc ./MCAL/DIO/Source/DIO_Imp.o
  .stab          0x000006cc     0x14ac ./HAL/SevSeg/Source/SevSeg_Imp.o
@@ -545,8 +545,8 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
                                0x1518 (size before relaxing)
  .stab          0x00002ef8      0x2a0 ./HAL/Keypad/Source/Keypad_Imp.o
                                 0x2ac (size before relaxing)
- .stab          0x00003198      0xd68 ./App/main.o
-                                0xf00 (size before relaxing)
+ .stab          0x00003198      0xd80 ./App/main.o
+                                0xf18 (size before relaxing)
 
 .stabstr        0x00000000     0x1214
  *(.stabstr)

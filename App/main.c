@@ -89,6 +89,7 @@ int main(){
 						player1Score = 0;
 						player2Score = 0;
 						_delay_ms(1000);
+						LCD_voidSendCommand(LCD_ClearDisplay);
 					}
 				}
 			}
@@ -129,8 +130,10 @@ int main(){
 						LCD_voidWriteString((u8*)"Wins!");
 						player1Score = 0;
 						player2Score = 0;
+						_delay_ms(1000);
+						LCD_voidSendCommand(LCD_ClearDisplay);
 					}
-					_delay_ms(1000);
+
 				}
 			}
 			else{
